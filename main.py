@@ -1,0 +1,3 @@
+import formAddNewEmployee
+
+formAddNewEmployee.run()
