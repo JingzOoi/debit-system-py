@@ -4,7 +4,9 @@ import PySimpleGUI as sg
 layout = [
     [sg.Text('Main Menu', key='_title_')],
     [sg.Button('Point-of-Sale interface', key='_POS_')],
-    [sg.Button('Order History', key='_order_')],
+    [sg.Button('Manage Order', key='_order_')],
+    [sg.Button('Manage Menu', key='_menu_')],
+    [sg.Button('Manage Employee', key='_employee_')],
     [sg.Button('Logout', key='_logout_')]
 ]
 

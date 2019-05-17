@@ -10,7 +10,7 @@ def employee_list():
 
 def employee_list_search(_id):
     employeeList = employee_list()
-    return employeeList[_id]
+    return Employee(employeeList[_id])
 
 
 def employee_list_update(updatedList):
@@ -42,6 +42,9 @@ class Employee:
 
     def __repr__(self):
         return f'{self.details}'
+
+    def __getitem__(self, attr):
+        return f'{self.details[attr]}'
 
     def add(self):
         employeeList = employee_list()
