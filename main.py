@@ -13,6 +13,7 @@ while True:
     event, values = window.Read()
 
     if event is None or event == 'Quit':
+        window.Close()
         break
     else:
         window.Close()

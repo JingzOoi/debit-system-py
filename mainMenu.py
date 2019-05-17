@@ -1,4 +1,5 @@
 import formLogin
+import formItem
 import PySimpleGUI as sg
 
 layout = [
@@ -22,3 +23,5 @@ def run(session: dict):
             window.Close()
             formLogin.run()
             break
+        elif event == '_menu_':
+            formItem.run()
