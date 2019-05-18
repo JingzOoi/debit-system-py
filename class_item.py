@@ -40,3 +40,15 @@ class Item:
             self.id: self.details
         })
         item_list_update(itemList)
+
+    def delete(self):
+        itemList = item_list()
+        itemList.pop(self.id)
+        item_list_update(itemList)
+
+    def update(self):
+        itemList = item_list()
+        itemList.update({
+            self.id: self.details
+        })
+        item_list_update(itemList)
